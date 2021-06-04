@@ -1,0 +1,67 @@
+/* 目录 */
+.ulCate {
+    padding-left: 10px;
+  list-style:none;
+}
+.ulTexts_Cate {
+    display:none;
+    padding-left: 5px;
+  list-style:none;
+}
+/* 文章 */
+body > h4 {
+    margin: 0 0 6px 0;
+}
+body > h1 {
+    margin: 10px 0 0 0;
+}
+body > hr {
+    margin: 12px 0 5px;
+}
+img {
+    max-width: 100%;
+}
+.articalContent {
+    margin: 10px 0 20px 0;
+}
+.articalContent [align=center] img {
+    display: block;
+    margin: 10px auto;
+}
+/* 文章-回复 */
+#divReply {
+    font-size: 15px;
+}
+#divReply > h2 {
+    margin: 0;
+}
+#divReply fieldset {
+    padding: 6px 10px;
+}
+#divReply fieldset > div:first-child {
+    margin-bottom: 6px;
+}
+
+#divReply .divReplyIsHostTrue  .author{ color:Red}
+#divReply .author{  font-weight:bold}
+.pubtime{ font-size:13px}
+.divReplyIsHostFalse, .divReplyIsHostTrue {
+    /*处理西文*/
+    word-break: break-all;
+    /*处理中日韩*/
+    line-break: anywhere;
+    margin: 8px 0;
+}
+.divReplyIsHostFalse {
+    display:none;
+}
+.showGuestReply .divReplyIsHostFalse {
+    display: block;
+}
+/* 文章-翻页 */
+a.page-prev, a.page-next {
+    display: block;
+}
+a.page-prev.cat, a.page-next.cat {
+    display: none;
+}
