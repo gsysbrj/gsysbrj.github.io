@@ -53,11 +53,8 @@ img {
     line-break: anywhere;
     margin: 8px 0;
 }
-.divReplyIsHostFalse {
-    display:none;
-}
-.showGuestReply .divReplyIsHostFalse {
-    display: block;
+.showHostOnly .divReplyIsHostFalse {
+    display: none;
 }
 /* 文章-翻页 */
 a.page-prev, a.page-next {

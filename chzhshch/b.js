@@ -15,9 +15,9 @@ $(document).ready(function(){
     const params = new URLSearchParams(window.location.search);
     const newsid = params.get("newsid");
     const from = params.get("from");
-    // 只展示缠师回复
+    // 只展示缠师回复切换
     $('#divReply').on('click', '[type="checkbox"]', function () {
-        $("#divReply").toggleClass("showGuestReply");
+        $("#divReply").toggleClass("showHostOnly");
     });
     // 调整上一篇和下一篇链接
     if (from === 'cat') {
