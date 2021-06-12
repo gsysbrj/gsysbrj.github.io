@@ -1,12 +1,23 @@
+html {
+    font-size: 16px;
+}
+body {
+    color: #464646;
+}
 /* 目录 */
 .ulCate {
     padding-left: 10px;
   list-style:none;
 }
+.ulCate a {
+}
 .ulTexts_Cate {
     display:none;
     padding-left: 10px;
   list-style:none;
+}
+.liText {
+    font-size: 15px;
 }
 /* 文章 */
 body > h4 {
@@ -14,9 +25,20 @@ body > h4 {
 }
 body > h1 {
     margin: 10px 0 0 0;
+    color: #6A3F30;
+}
+body > div > .pubtime {
+    font-size: 14px;
+    font-weight: 600;
+    color: #7C7C7C;
 }
 body > hr {
-    margin: 12px 0 5px;
+    margin: 24px 0 5px;
+}
+body > div:nth-child(2) a,
+body > div:nth-child(6) a,
+body > div:nth-child(9) a {
+    color: #6A3F30;
 }
 img {
     max-width: 100%;
@@ -37,15 +59,25 @@ img {
     margin: 0;
 }
 #divReply fieldset {
-    padding: 6px 10px;
+    border-color: aliceblue;
 }
 #divReply fieldset > div:first-child {
     margin-bottom: 6px;
 }
+#divReply fieldset > div:last-child {
+    color: #7C7C7C;
+}
 
-#divReply .divReplyIsHostTrue  .author{ color:Red}
-#divReply .author{  font-weight:bold}
-.pubtime{ font-size:13px}
+#divReply .divReplyIsHostTrue  .author{
+    color:Red;
+}
+#divReply .author {
+    font-weight:bold;
+}
+#divReply .pubtime{
+    font-size:13px;
+    color: #7C7C7C;
+}
 .divReplyIsHostFalse, .divReplyIsHostTrue {
     /*处理西文*/
     word-break: break-all;
