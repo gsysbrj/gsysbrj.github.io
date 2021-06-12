@@ -23,6 +23,7 @@ img {
 }
 .articalContent {
     margin: 10px 0 20px 0;
+    padding: 0 6px;
 }
 .articalContent [align=center] img {
     display: block;
