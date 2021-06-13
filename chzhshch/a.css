@@ -2,22 +2,41 @@ html {
     font-size: 16px;
 }
 body {
-    color: #464646;
+    /* color: #464646; */
+}
+ul, li {
+    padding: 0;
 }
 /* 目录 */
 .ulCate {
-    padding-left: 10px;
+  padding-left: 10px;
   list-style:none;
 }
-.ulCate a {
+a {
+    text-decoration: none;
+    color: #6A3F30;
 }
+a:active, a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #23978e;
+}
+
 .ulTexts_Cate {
     display:none;
-    padding-left: 10px;
   list-style:none;
+  border: solid 1px aliceblue;
 }
 .liText {
     font-size: 15px;
+    padding: 5px 0  5px 5px;
+    border-bottom: solid 1px aliceblue;
+}
+.liText > span:last-child {
+    display: block;
+    font-size: 12px;
+    color: #7C7C7C;
 }
 /* 文章 */
 body > h4 {
@@ -30,7 +49,6 @@ body > h1 {
 body > div > .pubtime {
     font-size: 14px;
     font-weight: 600;
-    color: #7C7C7C;
 }
 body > hr {
     margin: 24px 0 5px;
@@ -40,12 +58,19 @@ body > div:nth-child(6) a,
 body > div:nth-child(9) a {
     color: #6A3F30;
 }
+
+/* 文章正文 */
+body > * {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 960px;
+}
+
 img {
     max-width: 100%;
 }
 .articalContent {
-    margin: 10px 0 20px 0;
-    padding: 0 6px;
+    padding: 5px 0 20px 0;
 }
 .articalContent [align=center] img {
     display: block;
@@ -53,10 +78,14 @@ img {
 }
 /* 文章-回复 */
 #divReply {
-    font-size: 15px;
+    font-size: 14px;
 }
 #divReply > h2 {
     margin: 0;
+}
+#divReply > div:nth-child(2) {
+    display: flex;
+    align-items: center;
 }
 #divReply fieldset {
     border-color: aliceblue;
@@ -65,7 +94,7 @@ img {
     margin-bottom: 6px;
 }
 #divReply fieldset > div:last-child {
-    color: #7C7C7C;
+    /* color: #7C7C7C; */
 }
 
 #divReply .divReplyIsHostTrue  .author{
@@ -76,7 +105,7 @@ img {
 }
 #divReply .pubtime{
     font-size:13px;
-    color: #7C7C7C;
+    /* color: #7C7C7C; */
 }
 .divReplyIsHostFalse, .divReplyIsHostTrue {
     /*处理西文*/
@@ -94,4 +123,14 @@ a.page-prev, a.page-next {
 }
 a.page-prev.cat, a.page-next.cat {
     display: none;
+}
+
+/* 特殊样式 */
+@media screen and (max-width: 960px){
+    font[size="7"] {
+        font-size: 33px;
+    }
+    font[size="5"] {
+        font-size: 24px;
+    }  
 }
