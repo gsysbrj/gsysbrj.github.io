@@ -70,6 +70,10 @@ img {
 }
 .articalContent {
     padding: 5px 0 20px 0;
+    /*处理西文*/
+    word-break: break-all;
+    /*处理中日韩*/
+    line-break: anywhere;
 }
 .articalContent [align=center] img {
     display: block;
