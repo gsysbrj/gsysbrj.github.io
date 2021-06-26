@@ -48,7 +48,6 @@ body > h1 {
 }
 body > div > .pubtime {
     font-size: 14px;
-    font-weight: 600;
 }
 body > hr {
     margin: 24px 0 5px;
@@ -78,7 +77,7 @@ img {
 }
 /* 文章-回复 */
 #divReply {
-    font-size: 14px;
+    font-size: 15px;
 }
 #divReply > h2 {
     margin: 0;
