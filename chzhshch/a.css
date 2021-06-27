@@ -2,7 +2,7 @@ html {
     font-size: 16px;
 }
 body {
-    /* color: #464646; */
+    color: #000000;
 }
 ul, li {
     padding: 0;
@@ -44,7 +44,8 @@ body > h4 {
 }
 body > h1 {
     margin: 10px 0 0 0;
-    color: #6A3F30;
+    /* color: #6A3F30; */
+    font-size: 24px;
 }
 body > div > .pubtime {
     font-size: 14px;
@@ -81,7 +82,7 @@ img {
 }
 /* 文章-回复 */
 #divReply {
-    font-size: 15px;
+    font-size: 14px;
 }
 #divReply > h2 {
     margin: 0;
