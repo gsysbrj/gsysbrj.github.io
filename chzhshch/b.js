@@ -16,7 +16,7 @@ $(document).ready(function(){
     $('ul.ulCate > li > a').on('click', function () {
         $(this).parent().next().toggle()
     })
-    
+
     // 只展示缠师回复切换
     $('#divReply').on('click', '[type="checkbox"]', function () {
         $("#divReply").toggleClass("showHostOnly");
