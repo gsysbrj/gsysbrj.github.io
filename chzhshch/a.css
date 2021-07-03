@@ -32,9 +32,12 @@ a:visited {
     font-size: 15px;
     padding: 5px 0  5px 5px;
     border-bottom: solid 1px aliceblue;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .liText > span:last-child {
-    display: block;
+    /* display: block; */
     font-size: 12px;
     color: #7C7C7C;
 }
