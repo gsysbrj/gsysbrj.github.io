@@ -12,13 +12,19 @@ async function getCmntList(newsid, page) {
 }
 
 $(document).ready(function(){
-    const params = new URLSearchParams(window.location.search);
-    const newsid = params.get("newsid");
-    const from = params.get("from");
+    // 目录开合
+    $('ul.ulCate > li > a').on('click', function () {
+        $(this).parent().next().toggle()
+    })
+    
     // 只展示缠师回复切换
     $('#divReply').on('click', '[type="checkbox"]', function () {
         $("#divReply").toggleClass("showHostOnly");
     });
+
+    const params = new URLSearchParams(window.location.search);
+    const newsid = params.get("newsid");
+    const from = params.get("from");
     // 调整上一篇和下一篇链接
     if (from === 'cat') {
         $(".page-prev.time, .page-next.time").css('display', 'none');
@@ -35,7 +41,7 @@ $(document).ready(function(){
         async mounted () {
             if (newsid) {
                 const data = await getCmntList(newsid, 1);
-                this.replyList = data.result.cmntlist;           
+                this.replyList = data.result.cmntlist;
             }
         }
     }
