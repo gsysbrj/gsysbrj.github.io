@@ -84,8 +84,19 @@ img {
     margin: 10px auto;
 }
 /* 文章-回复 */
+
+.show-reply {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    color: seagreen;
+    border: olivedrab dotted 1px;
+}
+
 #divReply {
     font-size: 14px;
+    display: none;
 }
 #divReply > h2 {
     margin: 0;

@@ -17,6 +17,10 @@ $(document).ready(function(){
         $(this).parent().next().toggle()
     })
 
+    $('.show-reply').on('click', function () {
+        $("#divReply").toggle();
+    })
+
     // 只展示缠师回复切换
     $('#divReply').on('click', '[type="checkbox"]', function () {
         $("#divReply").toggleClass("showHostOnly");
