@@ -46,12 +46,12 @@ body > h4 {
     margin: 0 0 6px 0;
 }
 body > h1 {
-    margin: 10px 0 0 0;
+    margin: 10px 0 8px 0;
     /* color: #6A3F30; */
     font-size: 24px;
 }
 body > div > .pubtime {
-    font-size: 14px;
+    font-size: 13px;
 }
 body > hr {
     margin: 24px 0 5px;
@@ -66,18 +66,22 @@ body > div:nth-child(9) a {
 body > * {
     margin-left: auto !important;
     margin-right: auto !important;
-    max-width: 960px;
+    max-width: 900px;
 }
 
 img {
     max-width: 100%;
 }
 .articalContent {
+    margin-top: 2px;
     padding: 5px 0 20px 0;
     /*处理西文*/
     word-break: break-all;
     /*处理中日韩*/
     line-break: anywhere;
+}
+pre {
+    white-space: normal;
 }
 .articalContent [align=center] img {
     display: block;
