@@ -139,6 +139,7 @@ pre {
     -webkit-line-break: anywhere;
     line-break: anywhere;
     margin: 8px 0;
+    overflow: auto;
 }
 .showHostOnly .divReplyIsHostFalse {
     display: none;
