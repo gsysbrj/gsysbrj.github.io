@@ -131,10 +131,10 @@ pre {
 }
 .divReplyIsHostFalse, .divReplyIsHostTrue {
     /*处理西文*/
-    -webkit-word-break: break-all;
     word-break: break-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     /*处理中日韩*/
-    -webkit-line-break: anywhere;
     line-break: anywhere;
     margin: 8px 0;
 }
