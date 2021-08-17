@@ -135,6 +135,8 @@ pre {
     word-wrap: break-word;
     overflow-wrap: break-word;
     /*处理中日韩*/
+    -ms-line-break: anywhere;
+    -webkit-line-break: anywhere;
     line-break: anywhere;
     margin: 8px 0;
 }
