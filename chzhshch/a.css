@@ -30,17 +30,34 @@ a:visited {
 }
 .liText {
     font-size: 15px;
-    padding: 5px 0  5px 5px;
+    padding: 0 0 0 3px;
     border-bottom: solid 1px aliceblue;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.liText > span:last-child {
+.liText > span {
+    padding-left: 1px;
+    padding-right: 1px;
     /* display: block; */
     font-size: 12px;
+    /* color: #7C7C7C; */
+}
+.liText > span:nth-of-type(1) {
+    /* padding-left: 1px; */
+    /* padding-right: 1px; */
+    /* display: block; */
+    /* font-size: 12px; */
     color: #7C7C7C;
 }
+.liText > span:nth-of-type(3) {
+    /* padding-left: 1px; */
+    /* padding-right: 1px; */
+    /* display: block; */
+    /* font-size: 12px; */
+    color: #7C7C7C;
+}
+
 /* 文章 */
 body > h4 {
     margin: 0 0 6px 0;
