@@ -4,35 +4,24 @@ html {
 body {
     color: #000000;
 }
-ul, li {
-    padding: 0;
-}
-/* 目录 */
+/* ---------------目录--------------- */
 .ulCate {
   padding-left: 10px;
-  list-style:none;
-}
-a {
-    text-decoration: none;
-    color: #6A3F30;
-}
-a:active, a:hover {
-    text-decoration: underline;
-}
-a:visited {
-    color: #23978e;
+  list-style-position: inside;
 }
 
 .ulTexts_Cate {
     display:none;
-  list-style:none;
-  border: solid 1px aliceblue;
+    list-style-position: inside;
+    list-style-type: revert;
+    /* border: solid 1px aliceblue; */
+    padding-left: 30px;
 }
 .liText {
-    font-size: 15px;
+    font-size: 16px;
     padding: 0 0 0 3px;
-    border-bottom: solid 1px aliceblue;
-    overflow: hidden;
+    /* border-bottom: solid 1px aliceblue; */
+    /* overflow: hidden; */
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -40,25 +29,26 @@ a:visited {
     padding-left: 1px;
     padding-right: 1px;
     /* display: block; */
-    font-size: 12px;
+    font-size: 14px;
     /* color: #7C7C7C; */
+    color:blue;
 }
 .liText > span:nth-of-type(1) {
     /* padding-left: 1px; */
     /* padding-right: 1px; */
     /* display: block; */
     /* font-size: 12px; */
-    color: #7C7C7C;
+    color: blue;
 }
 .liText > span:nth-of-type(3) {
     /* padding-left: 1px; */
     /* padding-right: 1px; */
     /* display: block; */
     /* font-size: 12px; */
-    color: #7C7C7C;
+    color: blue;
 }
 
-/* 文章 */
+/* -------------------文章-------------------- */
 body > h4 {
     margin: 0 0 6px 0;
 }
@@ -72,11 +62,6 @@ body > div > .pubtime {
 }
 body > hr {
     margin: 24px 0 5px;
-}
-body > div:nth-child(2) a,
-body > div:nth-child(6) a,
-body > div:nth-child(9) a {
-    color: #6A3F30;
 }
 
 /* 文章正文 */
@@ -104,8 +89,8 @@ pre {
     display: block;
     margin: 10px auto;
 }
-/* 文章-回复 */
 
+/* 文章-回复 */
 .show-reply {
     display: flex;
     height: 30px;
@@ -131,9 +116,6 @@ pre {
 }
 #divReply fieldset > div:first-child {
     margin-bottom: 6px;
-}
-#divReply fieldset > div:last-child {
-    /* color: #7C7C7C; */
 }
 
 #divReply .divReplyIsHostTrue  .author{
@@ -176,5 +158,11 @@ a.page-prev.cat, a.page-next.cat {
     }
     font[size="5"] {
         font-size: 24px;
-    }  
+    }
+
+
+    .ulTexts_Cate {
+        padding-left: 12px;
+    }
+
 }
