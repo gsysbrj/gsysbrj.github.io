@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         // 默认checked
         cb.dispatchEvent(new Event('click'))
+        cb.checked = true
     }
 
     const params = new URLSearchParams(window.location.search);
