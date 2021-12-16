@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 divReply.style.display = 'none'
             }
         })
+        // 默认展示回复
+        divReply.style.display = 'block'
     }
 
     // 只展示缠师回复切换
@@ -39,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cb.addEventListener('click', () => {
             divReply.classList.toggle('showHostOnly')
         })
+        // 默认checked
+        cb.trigger('click')
     }
 
     const params = new URLSearchParams(window.location.search);
