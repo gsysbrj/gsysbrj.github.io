@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             divReply.classList.toggle('showHostOnly')
         })
         // 默认checked
-        cb.trigger('click')
+        cb.dispatchEvent(new Event('click'))
     }
 
     const params = new URLSearchParams(window.location.search);
