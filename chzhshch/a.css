@@ -1,21 +1,56 @@
+/* common */
 html {
     font-size: 16px;
 }
 body {
     color: #000000;
+    font-family: Verdana,"宋体",sans-serif;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, label, dl, dt, dd, fieldset, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+a:hover {
+    text-decoration: underline !important;
+}
+
 /* ---------------目录--------------- */
 .ulCate {
   padding-left: 10px;
   list-style-position: inside;
+  color: #6A3F30;
 }
-
+.ulCate a {
+    color: #6A3F30;
+    line-height: 24px;
+    font-family: "宋体";
+    font-size: 14px;
+    text-decoration: none;
+}
+.ulCate > li {
+    list-style-type: '- ';
+}
 .ulTexts_Cate {
     display:none;
     list-style-position: inside;
     list-style-type: revert;
     /* border: solid 1px aliceblue; */
-    padding-left: 30px;
+    /* padding-left: 10px; */
+}
+.ulTexts_Cate > li {
+    list-style-image: url(http://simg.sinajs.cn/blog7newtpl/image/3/3_9/images/SG_dot.gif);
+    display: flex;
+    align-items: center;
+    background-image: url(http://simg.sinajs.cn/blog7newtpl/image/3/3_9/images/SG_dot.gif);
+    padding-left: 11px;
+    background-repeat: no-repeat;
+    background-position: left 9px;
 }
 .liText {
     font-size: 16px;
@@ -29,36 +64,52 @@ body {
     padding-left: 1px;
     padding-right: 1px;
     /* display: block; */
-    font-size: 14px;
-    /* color: #7C7C7C; */
-    color:blue;
+    font-size: 12px;
+    color: #7C7C7C;
+    /* color:blue; */
 }
 .liText > span:nth-of-type(1) {
+    /* margin-left: 5px; */
     /* padding-left: 1px; */
     /* padding-right: 1px; */
     /* display: block; */
     /* font-size: 12px; */
-    color: blue;
+    /* color: blue; */
+    visibility: hidden;
 }
 .liText > span:nth-of-type(3) {
     /* padding-left: 1px; */
     /* padding-right: 1px; */
     /* display: block; */
     /* font-size: 12px; */
-    color: blue;
+    /* color: blue; */
+    visibility: hidden;
 }
 
 /* -------------------文章-------------------- */
-body > h4 {
+body > h4{
     margin: 0 0 6px 0;
 }
-body > h1 {
-    margin: 10px 0 8px 0;
-    /* color: #6A3F30; */
+body > h4 > a{
+    color: #595959;
+    font-family: "微软雅黑","黑体";
     font-size: 24px;
+    font-weight: 300;
+    text-decoration: none;
+}
+body > h1 {
+    margin: 10px 0 2px 0;
+    color: #6A3F30;
+    /* font-size: 24px; */
+    font-size: 18px;
+    font-family: "微软雅黑","黑体";
+    font-weight: 300;
 }
 body > div > .pubtime {
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-family: Arial;
+    font-size: 10px;
+    color: #7C7C7C;;
 }
 body > hr {
     margin: 24px 0 5px;
@@ -75,12 +126,21 @@ img {
     max-width: 100%;
 }
 .articalContent {
-    margin-top: 2px;
-    padding: 5px 0 20px 0;
+    margin-bottom: 180px;
+    padding: 18px 0 30px 0;
     /*处理西文*/
     word-break: break-all;
     /*处理中日韩*/
     line-break: anywhere;
+    font-family: simsun;
+    line-height: 150%;
+    font-size: 14px;
+}
+.articalContent, .articalContent p, .articalContent p font, .articalContent font, .articalContent span, .articalContent table td {
+    line-height: 150%;
+}
+.articalContent p {
+    margin-bottom: 5px;
 }
 pre {
     white-space: normal;
@@ -92,7 +152,8 @@ pre {
 
 /* 文章-回复 */
 .show-reply {
-    display: flex;
+    /* display: flex; */
+    display: none;
     height: 30px;
     align-items: center;
     justify-content: center;
@@ -103,6 +164,7 @@ pre {
 #divReply {
     font-size: 14px;
     display: none;
+    color: #7C7C7C;
 }
 #divReply > h2 {
     margin: 0;
@@ -123,6 +185,7 @@ pre {
 }
 #divReply .author {
     font-weight:bold;
+    color: #464646;
 }
 #divReply .pubtime{
     font-size:13px;
@@ -144,11 +207,28 @@ pre {
     display: none;
 }
 /* 文章-翻页 */
+body > div > a, body > p > a {
+    color: #6A3F30;
+    line-height: 24px;
+    font-family: "宋体";
+    font-size: 14px;
+    text-decoration: none;
+}
 a.page-prev, a.page-next {
     display: block;
 }
 a.page-prev.cat, a.page-next.cat {
     display: none;
+}
+
+body > div:last-of-type {
+    /* display: none; */
+    font-size: 12px;
+    font-family: Verdana, "宋体", sans-serif;
+    color: #727272;
+    line-height: 22px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 /* 特殊样式 */

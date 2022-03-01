@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // })
     document.querySelectorAll('ul.ulCate > li > a').forEach(e => {
         e.addEventListener('click', () => {
-            const display = e.parentElement.nextElementSibling.style.display
+            const display = e.nextElementSibling.style.display
             if (display !== 'block') {
-                e.parentElement.nextElementSibling.style.display = 'block'
+                e.nextElementSibling.style.display = 'block'
             } else {
-                e.parentElement.nextElementSibling.style.display = 'none'
+                e.nextElementSibling.style.display = 'none'
             }
         })
     })
@@ -24,12 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
         showReply.addEventListener('click', () => {
             if (divReply.style.display !== 'block') {
                 divReply.style.display = 'block'
+                showReply.innerHTML = '不显示回复'
             } else {
                 divReply.style.display = 'none'
+                showReply.innerHTML = '显示回复'
             }
         })
         // 默认展示回复
         divReply.style.display = 'block'
+        showReply.innerHTML = '不显示回复'
     }
 
     // 只展示缠师回复切换
