@@ -1,11 +1,4 @@
 /* common */
-html {
-    font-size: 16px;
-}
-body {
-    color: #000000;
-    font-family: Verdana,"宋体",sans-serif;
-}
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +9,19 @@ body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, label, dl, dt, dd, fieldset, 
     border: 0;
     list-style: none;
 }
+html {
+    font-size: 16px;
+    background-color: #F8F8F8;
+}
+body {
+    background-color: #fff;
+    /* color: #000000; */
+    font-family: Verdana,"宋体",sans-serif;
+    /* padding: 8px; */
+    /* margin: 8px; */
+
+}
+
 a:hover {
     text-decoration: underline !important;
 }
@@ -116,10 +122,16 @@ body > hr {
 }
 
 /* 文章正文 */
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 730px;
+    padding: 0 12px;
+}
 body > * {
     margin-left: auto !important;
     margin-right: auto !important;
-    max-width: 900px;
+    /* max-width: 900px; */
 }
 
 img {
@@ -207,7 +219,7 @@ pre {
     display: none;
 }
 /* 文章-翻页 */
-body > div > a, body > p > a {
+a {
     color: #6A3F30;
     line-height: 24px;
     font-family: "宋体";
@@ -232,6 +244,9 @@ body > div:last-of-type {
 }
 
 /* 特殊样式 */
+[face] {
+    color: #7C7C7C;
+}
 @media screen and (max-width: 960px){
     font[size="7"] {
         font-size: 33px;
@@ -243,6 +258,10 @@ body > div:last-of-type {
 
     .ulTexts_Cate {
         padding-left: 12px;
+    }
+
+    body {
+        padding: 0 8px;
     }
 
 }
