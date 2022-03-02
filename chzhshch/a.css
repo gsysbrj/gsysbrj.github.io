@@ -94,7 +94,7 @@ a:hover {
 
 /* -------------------文章-------------------- */
 body > h4{
-    margin: 0 0 6px 0;
+    padding: 6px 0;
 }
 body > h4 > a{
     color: #595959;
@@ -141,12 +141,13 @@ img {
     margin-bottom: 180px;
     padding: 18px 0 30px 0;
     /*处理西文*/
-    word-break: break-all;
+    word-break: normal;
     /*处理中日韩*/
-    line-break: anywhere;
+    line-break: normal;
     font-family: simsun;
     line-height: 150%;
     font-size: 14px;
+    text-align: justify;
 }
 .articalContent, .articalContent p, .articalContent p font, .articalContent font, .articalContent span, .articalContent table td {
     line-height: 150%;
