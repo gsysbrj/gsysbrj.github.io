@@ -126,6 +126,7 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 730px;
+    min-height: 100vh;
     padding: 0 12px;
 }
 body > * {
