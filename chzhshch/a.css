@@ -266,4 +266,8 @@ body > div:last-of-type {
         padding: 0 8px;
     }
 
+    .articalContent * {
+        font-weight: normal;
+    }
+
 }
