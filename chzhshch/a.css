@@ -11,7 +11,8 @@ body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, label, dl, dt, dd, fieldset, 
 }
 html {
     font-size: 16px;
-    background-color: #F8F8F8;
+    /* background-color: #F8F8F8; */
+    background-color: #66cbff1f;
 }
 body {
     background-color: #fff;
@@ -19,6 +20,7 @@ body {
     font-family: Verdana,"宋体",sans-serif;
     /* padding: 8px; */
     /* margin: 8px; */
+    background-color: #fcfeff;
 }
 
 a:hover {
@@ -33,9 +35,9 @@ a:hover {
 }
 .ulCate a {
     color: #6A3F30;
-    line-height: 24px;
+    line-height: 25px;
     font-family: "宋体";
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
 }
 .ulCate > li {
@@ -53,9 +55,9 @@ a:hover {
     display: flex;
     align-items: center;
     background-image: url(http://simg.sinajs.cn/blog7newtpl/image/3/3_9/images/SG_dot.gif);
-    padding-left: 11px;
+    padding-left: 8px;
     background-repeat: no-repeat;
-    background-position: left 9px;
+    background-position: left 12px;
 }
 .liText {
     font-size: 16px;
@@ -97,7 +99,7 @@ body > h4{
     padding: 6px 0;
 }
 body > h4 > a{
-    color: #595959;
+    color: #8A199C;
     font-family: "微软雅黑","黑体";
     font-size: 24px;
     font-weight: 300;
@@ -105,17 +107,15 @@ body > h4 > a{
 }
 body > h1 {
     margin: 10px 0 2px 0;
-    color: #6A3F30;
-    /* font-size: 24px; */
-    font-size: 18px;
+    /* color: #6A3F30; */
+    color: #6067FF;
+    font-size: 21px;
     font-family: "微软雅黑","黑体";
     font-weight: 300;
 }
 body > div > .pubtime {
-    /* font-size: 13px; */
-    font-family: Arial;
-    font-size: 10px;
-    color: #7C7C7C;;
+    font-size: 13px;
+    color: #595959;;
 }
 body > hr {
     margin: 24px 0 5px;
@@ -127,8 +127,8 @@ body {
     margin: 0 auto;
     max-width: 730px;
     min-height: 100vh;
-    padding: 0 20px;
-    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 3%);
+    padding: 0 35px;
+    box-shadow: 1px 1px 5px 2px rgba(104, 94, 1, 0.041);
 }
 body > * {
     margin-left: auto !important;
@@ -204,7 +204,7 @@ pre {
     color: #464646;
 }
 #divReply .pubtime{
-    font-size:13px;
+    font-size:12px;
     /* color: #7C7C7C; */
 }
 .divReplyIsHostFalse, .divReplyIsHostTrue {
