@@ -99,7 +99,7 @@ body > h4{
     padding: 6px 0;
 }
 body > h4 > a{
-    color: #8A199C;
+    color: #010101c7;
     font-family: "微软雅黑","黑体";
     font-size: 24px;
     font-weight: 300;
@@ -107,15 +107,14 @@ body > h4 > a{
 }
 body > h1 {
     margin: 10px 0 2px 0;
-    /* color: #6A3F30; */
-    color: #6067FF;
-    font-size: 21px;
-    font-family: "微软雅黑","黑体";
-    font-weight: 300;
+    font-family: "黑体";
+    color: black;
+    font-size: 16px;
 }
 body > div > .pubtime {
-    font-size: 13px;
-    color: #595959;;
+    font-size: 12px;
+    color: #595959;
+    font-family: Arial;
 }
 body > hr {
     margin: 24px 0 5px;
@@ -248,9 +247,9 @@ body > div:last-of-type {
 }
 
 /* 特殊样式 */
-[face] {
-    color: #7C7C7C;
-}
+/* [face] {
+     color: #7C7C7C; 
+ } */
 @media screen and (max-width: 960px){
     font[size="7"] {
         font-size: 33px;
