@@ -18,22 +18,11 @@ body {
     background-color: #fff;
     background-color: #fcfeff;
 }
-
-a:hover {
-    text-decoration: underline !important;
-}
-
 /* ---------------目录--------------- */
 .ulCate {
   padding-left: 10px;
   list-style-position: inside;
   color: #6A3F30;
-}
-.ulCate a {
-    color: #6A3F30;
-    line-height: 25px;
-    font-size: 16px;
-    text-decoration: none;
 }
 .ulCate > li {
     list-style-type: '- ';
@@ -93,11 +82,10 @@ body > h4{
 }
 body > h4 > a{
     color: #010101c7;
-    text-decoration: none;
 }
 body > h1 {
     margin: 10px 0 2px 0;
-    font-size: 16px;
+    font-size: 17px;
 }
 body > div > .pubtime {
     font-size: 12px;
@@ -207,12 +195,6 @@ pre {
     display: none;
 }
 /* 文章-翻页 */
-a {
-    color: #6A3F30;
-    line-height: 24px;
-    font-size: 14px;
-    text-decoration: none;
-}
 a.page-prev, a.page-next {
     display: block;
 }
