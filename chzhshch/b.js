@@ -13,13 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
-
     // $('.show-reply').on('click', function () {
     //     $("#divReply").toggle();
     // })
     const divReply = document.querySelector('#divReply')
     const showReply = document.querySelector('.show-reply')
-
     if (showReply) {
         showReply.addEventListener('click', () => {
             if (divReply.style.display !== 'block') {
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         divReply.style.display = 'block'
         showReply.innerHTML = '不显示回复'
     }
-
     // 只展示缠师回复切换
     // $('#divReply').on('click', '[type="checkbox"]', function () {
     //     $("#divReply").toggleClass("showHostOnly");
@@ -48,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         cb.dispatchEvent(new Event('click'))
         cb.checked = true
     }
-
     const params = new URLSearchParams(window.location.search);
     const newsid = params.get("newsid");
     const from = params.get("from");
