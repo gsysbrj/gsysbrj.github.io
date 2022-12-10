@@ -97,7 +97,7 @@ body > hr {
 body {
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 730px;
+    max-width: 900px;
     min-height: 100vh;
     padding: 0 35px;
     box-shadow: 1px 1px 5px 2px rgba(104, 94, 1, 0.041);
